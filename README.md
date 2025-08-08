@@ -14,7 +14,7 @@
 
 ## Deployment
 
-> **Production environment:** [https://autoway.vercel.app](https://autoway.vercel.app)
+> **Production environment:** [https://autoway-marketplace.vercel.app/](https://autoway-marketplace.vercel.app/)
 
 ---
 
