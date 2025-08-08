@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 220 40% 98%; /* cinza-azulado bem claro */
+    --foreground: 222 47% 11%; /* azul-escuro para texto */
+    --card: 220 40% 98%;
+    --card-foreground: 222 47% 11%;
+    --popover: 220 40% 98%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 228 45% 32%; /* azul sofisticado */
+    --primary-foreground: 220 40% 98%;
+    --secondary: 220 24% 94%; /* cinza frio claro */
+    --secondary-foreground: 222 47% 11%;
+    --muted: 220 16% 90%;
+    --muted-foreground: 222 13% 42%;
+    --accent: 228 36% 85%; /* azul acinzentado suave */
+    --accent-foreground: 228 45% 32%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 89%;
+    --input: 220 13% 89%;
+    --ring: 228 45% 32%;
+    --chart-1: 228 45% 32%;
+    --chart-2: 220 40% 98%;
+    --chart-3: 222 13% 42%;
+    --chart-4: 220 24% 94%;
+    --chart-5: 220 16% 90%;
+    --radius: 0.5rem;
+    --sidebar-background: 220 24% 94%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 228 45% 32%;
+    --sidebar-primary-foreground: 220 40% 98%;
+    --sidebar-accent: 220 16% 90%;
+    --sidebar-accent-foreground: 228 45% 32%;
+    --sidebar-border: 220 13% 89%;
+    --sidebar-ring: 228 45% 32%;
+  }
+  .dark {
+    --background: 228 32% 10%; /* azul-escuro sofisticado */
+    --foreground: 220 40% 98%;
+    --card: 228 32% 13%; /* levemente mais claro que o background */
+    --card-foreground: 220 40% 98%;
+    --popover: 228 32% 13%;
+    --popover-foreground: 220 40% 98%;
+    --primary: 220 40% 98%;
+    --primary-foreground: 228 32% 10%;
+    --secondary: 228 20% 18%;
+    --secondary-foreground: 220 40% 98%;
+    --muted: 228 16% 22%;
+    --muted-foreground: 220 20% 70%;
+    --accent: 228 24% 22%;
+    --accent-foreground: 220 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 228 16% 22%;
+    --input: 228 16% 22%;
+    --ring: 220 40% 98%;
+    --chart-1: 220 40% 98%;
+    --chart-2: 228 32% 10%;
+    --chart-3: 228 16% 22%;
+    --chart-4: 228 20% 18%;
+    --chart-5: 228 16% 22%;
+    --radius: 0.5rem;
+    --sidebar-background: 228 20% 18%;
+    --sidebar-foreground: 220 40% 98%;
+    --sidebar-primary: 220 40% 98%;
+    --sidebar-primary-foreground: 228 32% 10%;
+    --sidebar-accent: 228 16% 22%;
+    --sidebar-accent-foreground: 220 40% 98%;
+    --sidebar-border: 228 16% 22%;
+    --sidebar-ring: 220 40% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.embla {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  height: 100%;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  position: relative;
+}
